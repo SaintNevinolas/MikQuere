@@ -10,6 +10,19 @@
 .headerwrap{display:flex;align-items:center;gap:26px;min-height:74px}
 .table_wrap{display:grid;grid-template-columns:1fr 1fr;align-items: center; gap:26px;}
 .wrap{display:grid;grid-template-columns:1fr;align-items: center;}
+:root{
+  --ink:#1c1a14; --soft:#3e3b31; --muted:#5f5b4f;
+  --paper:#f0efdf; --surface:#fbfaf6; --sable:#e8e4d6; --line:#d6d0bd;
+  --olive:#4a4529; --olive-2:#37331d; --olive-3:#5c5636; --on-olive:#f2efe4; --on-olive-soft:#cfc9b2;
+  --red:#b5121b; --red-h:#930e16;
+  --wrap:1200px; --gut:clamp(16px,5vw,48px);
+}
+.Contact{
+    background-color: var(--paper);
+}
+main a:hover{
+    color:var(--red-h)
+}
 </style>
 
 <body id="top">
@@ -59,7 +72,7 @@
             </table>
         </section>
 
-        <section>
+        <section class="Contact">
             <h1>Contactez-nous</h1>
             <div class="wrap">
                 <p>Par téléphone</p>

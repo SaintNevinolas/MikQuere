@@ -8,20 +8,53 @@
     </head>
 <style>
 .headerwrap{display:flex;align-items:center;gap:26px;min-height:74px}
+.wrap{display:grid;grid-template-columns:1fr 1fr;align-items: center; gap:26px;}
 </style>
 
-<body>
+<body id="top">
     <header class="headerwrap">
-        <a href="marque" ><b>Mikaël QUERE</b><hr><small>SARL de transport</small></a>
+        <a href="#top" >
+            <b>Mikaël QUERE</b>
+            <hr>
+            <small>SARL de transport</small>
+        </a>
         <a href="" >Solutions</a>
         <a href="" >Tournées</a>
         <a href="" >Moyens</a>
         <a href="" >Références</a>
         <a href="" >Contact</a>
-        <a href="" >06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</a>
+        <button>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</button>
         <button>Demander un devis</button> 
-    
     </header>
 
+    <main>
+        <section>
+            <h1>Courses express urgentes et tournées régulières</h1>
+            <p>Un colis, un pli, du matériel à livrer en urgence ou chaque semaine ?
+                Courses, tournées dédiées ou messagerie : notre équipe s’en charge, dans le respect de vos délais.</p>
+            <button>Demander un devis</button><button>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</button>
+            <ul>
+                <li><b>2013</b><span>Naissance de la SARL</span></li>
+                <li><b>XX</b><span>Chauffeurs</span></li>
+                <li><b>XX</b><span>Véhicules de transport</span></li>
+                <li><b>7</b><span>Licences de transport</span></li>
+                <li><b>Guipavas</b><span>Notre siège, aux portes de Brest</span></li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Ce que nous transportons pour vous</h1>
+            <ul class="wrap">
+                <li>Colis<hr></li>
+                <li>Matériel Nucléaire<hr></li>
+                <li>Fleurs<hr></li>
+                <li>Matériel médical<hr></li>
+                <li>Presse<hr></li>
+                <li>Matériel divers<hr></li>
+                <li>Pli et appels d'offres<hr></li>
+                <li>Et selon vos demandes...<hr></li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>

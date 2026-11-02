@@ -7,9 +7,11 @@
         <title>Mikaël QUERE Transport</title>
     </head>
 <style>
-.headerwrap{display:flex;align-items:center;gap:26px;min-height:74px}
+.headerwrap{position: sticky;top: 0;left: 0;display:flex;align-items:center;justify-content: space-evenly;gap:26px;min-height:74px;width: 100%;background-color: #FFFFFF;}
+nav{display: flex;gap: 30px;align-items: center;}
 .table_wrap{display:grid;grid-template-columns:1fr 1fr;align-items: center; gap:26px;}
-.wrap{display:grid;grid-template-columns:1fr;align-items: center;}
+.form_wrap{display:grid;grid-template-columns:1fr 1fr;align-items: center; gap:26px;width: 100%;}
+.wrap{display:grid;grid-template-columns:1fr;align-items: start;}
 :root{
   --ink:#1c1a14; --soft:#3e3b31; --muted:#5f5b4f;
   --paper:#f0efdf; --surface:#fbfaf6; --sable:#e8e4d6; --line:#d6d0bd;
@@ -17,11 +19,62 @@
   --red:#b5121b; --red-h:#930e16;
   --wrap:1200px; --gut:clamp(16px,5vw,48px);
 }
+body{
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+section{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.Presentation{
+    background-color: var(--olive);
+    color: #FFFFFF;
+}
+.Statistiques{
+    background-color: var(--paper);
+}
+/* .Statistiques ul{
+    display: flex;
+} */
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: top;
+}
 .Contact{
     background-color: var(--paper);
+    /* margin: 10px; */
+}
+.Contact_wrap{
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+}
+form{
+    margin: 5px;
+    padding: 5px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
 }
 main a:hover{
     color:var(--red-h)
+}
+button{
+    background-color: var(--red);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
 }
 </style>
 
@@ -32,28 +85,62 @@ main a:hover{
             <hr>
             <small>SARL de transport</small>
         </a>
-        <a href="" >Solutions</a>
-        <a href="" >Tournées</a>
-        <a href="" >Moyens</a>
-        <a href="" >Références</a>
-        <a href="" >Contact</a>
-        <button>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</button>
-        <button>Demander un devis</button> 
+        <nav>
+            <a href="" >Solutions</a>
+            <a href="" >Tournées</a>
+            <a href="" >Moyens</a>
+            <a href="" >Références</a>
+            <a href="" >Contact</a>
+            <button>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</button>
+            <button>Demander un devis</button> 
+        </nav>
+
     </header>
 
     <main>
-        <section>
+        <section class="Presentation">
             <h1>Courses express urgentes et tournées régulières</h1>
             <p>Un colis, un pli, du matériel à livrer en urgence ou chaque semaine ?
                 Courses, tournées dédiées ou messagerie : notre équipe s’en charge, dans le respect de vos délais.</p>
             <button>Demander un devis</button><button>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</button>
-            <ul>
+        </section>
+        <section class="Statistiques">
+            <table>
+                <tr>
+                    <td>
+                        <div class="wrap">
+                            <b>2013</b><span>Naissance de la SARL</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrap">
+                            <b>XX</b><span>Chauffeurs</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrap">
+                            <b>XX</b><span>Véhicules de transport</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrap">
+                            <b>7</b><span>Licences de transport</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrap">
+                            <b>Guipavas</b><span>Notre siège, aux portes de Brest</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!-- <ul>
                 <li class="wrap"><b>2013</b><span>Naissance de la SARL</span></li>
                 <li class="wrap"><b>XX</b><span>Chauffeurs</span></li>
                 <li class="wrap"><b>XX</b><span>Véhicules de transport</span></li>
                 <li class="wrap"><b>7</b><span>Licences de transport</span></li>
                 <li class="wrap"><b>Guipavas</b><span>Notre siège, aux portes de Brest</span></li>
-            </ul>
+            </ul> -->
         </section>
 
         <section>
@@ -74,39 +161,43 @@ main a:hover{
 
         <section class="Contact">
             <h1>Contactez-nous</h1>
-            <div class="wrap">
-                <p>Par téléphone</p>
-                <b>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</b>
-            </div>
-            <div class="wrap">
-                <p>Par mail</p>
-                <a href="mailto:mikquere@free.fr">mikquere@free.fr</a>
-            </div>
-            <form>
-                <div class="table_wrap">
-                    <div>
-                        <label>Nom</label>
-                        <input/>
+            <div class="Contact_wrap">
+                <div>
+                    <div class="wrap">
+                        <p>Par téléphone</p>
+                        <b>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</b>
                     </div>
-                    <div>
-                        <label>Société</label>
-                        <input/>
-                    </div>
-                    <div>
-                        <label>Email</label>
-                        <input/>
-                    </div>
-                    <div>
-                        <label>Téléphone</label>
-                        <input/>
-                    </div>
-                    <div>
-                        <label>Adresse</label>
-                        <input/>
+                    <div class="wrap">
+                        <p>Par mail</p>
+                        <a href="mailto:mikquere@free.fr">mikquere@free.fr</a>
                     </div>
                 </div>
-                <button>Envoyer ma demande</button>
-            </form>
+                <form>
+                    <div class="form_wrap">
+                        <div>
+                            <label>Nom</label>
+                            <input/>
+                        </div>
+                        <div>
+                            <label>Société</label>
+                            <input/>
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input/>
+                        </div>
+                        <div>
+                            <label>Téléphone</label>
+                            <input/>
+                        </div>
+                        <div>
+                            <label>Adresse</label>
+                            <input/>
+                        </div>
+                    </div>
+                    <button>Envoyer ma demande</button>
+                </form>
+            </div>
         </section>
     </main>
 </body>

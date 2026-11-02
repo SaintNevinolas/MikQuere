@@ -42,15 +42,33 @@ section{
 /* .Statistiques ul{
     display: flex;
 } */
-table{
+.Statistiques table{
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
 }
-td{
+.Statistiques td{
     border: 1px solid black;
     text-align: center;
     vertical-align: top;
+}
+.Moyens table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.Moyens td{
+    text-align: center;
+}
+.Moyens td:first-child{
+    border-right: 1px solid var(--olive-2);
+}
+.Moyens tr:first-child td{
+    border-bottom: 1px solid var(--olive-2);
+}
+.Moyens{
+    display: flex;
+    background-color: var(--ink);
+    color: #FFFFFF;
 }
 .Contact{
     background-color: var(--paper);
@@ -157,6 +175,45 @@ button{
                     <li>Et selon vos demandes...<hr></li>
                 </ul>
             </table>
+        </section>
+
+        <section class="Moyens">
+            <div>
+                <h1>Nos Moyens</h1>
+                <p>qdkfjdslfsd</p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <div class="wrap">
+                            <b>Mobiles</b><span>De Brest à XXX</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrap">
+                            <b>250m²</b><span>d'espace de stockage</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="wrap">
+                            <b>3.5T</b><span>de PMA au plus</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrap">
+                            <b>7</b><span>Licences de transport</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="Confiance">
+            <h1>Ils nous font confiance</h1>
+            <p>Le Télégramme, 7 jours à Brest,BMA,Monceau, Rapid'Flore, Chronopost, Coliposte, Adrexo, TCS,
+            Alliance healthcare, CERP...</p>
         </section>
 
         <section class="Contact">

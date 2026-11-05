@@ -153,13 +153,13 @@ button{
 }
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateX(-30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .reveal.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 </style>
 <script>
@@ -206,16 +206,16 @@ document.addEventListener("DOMContentLoaded", () => {
     </header>
 
     <main>
-        <section class="Presentation reveal">
+        <section class="Presentation">
             <div>
-                <h1>Courses express urgentes et tournées régulières</h1>
-                <p>Un colis, un pli, du matériel à livrer en urgence ou chaque semaine ?
+                <h1 class="reveal">Courses express urgentes et tournées régulières</h1>
+                <p class="reveal">Un colis, un pli, du matériel à livrer en urgence ou chaque semaine ?
                     Courses, tournées dédiées ou messagerie : notre équipe s’en charge, dans le respect de vos délais.</p>
-                <button>Demander un devis</button><button>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</button>
+                <button class="reveal">Demander un devis</button><button class="reveal">06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</button>
             </div>
             <img alt="" src="fourgon-route.webp">
         </section>
-        <section class="Statistiques reveal">
+        <section class="Statistiques">
             <table>
                 <tr>
                     <td>
@@ -254,11 +254,11 @@ document.addEventListener("DOMContentLoaded", () => {
             </ul> -->
         </section>
 
-        <section class="Transports reveal">
+        <section class="Transports">
             <div>
-                <h1>Ce que nous transportons pour vous</h1>
-                <table>
-                    <ul class="table_wrap reveal">
+                <h1 class="reveal">Ce que nous transportons pour vous</h1>
+                <table class="reveal">
+                    <ul class="table_wrap">
                         <li>Colis<hr></li>
                         <li>Matériel Nucléaire<hr></li>
                         <li>Fleurs<hr></li>
@@ -273,12 +273,12 @@ document.addEventListener("DOMContentLoaded", () => {
             <img src="livraison-diable.webp" >
         </section>
 
-        <section class="Moyens reveal">
+        <section class="Moyens">
             <div>
-                <h1>Nos Moyens</h1>
-                <p>qdkfjdslfsd</p>
+                <h1 class="reveal">Nos Moyens</h1>
+                <p class="reveal">qdkfjdslfsd</p>
             </div>
-            <table>
+            <table class="reveal">
                 <tr>
                     <td>
                         <div class="wrap">
@@ -307,17 +307,17 @@ document.addEventListener("DOMContentLoaded", () => {
         </section>
 
         <section class="Confiance">
-            <h1>Ils nous font confiance</h1>
-            <p>Le Télégramme, 7 jours à Brest,BMA,Monceau, Rapid'Flore, Chronopost, Coliposte, Adrexo, TCS,
+            <h1 class="reveal">Ils nous font confiance</h1>
+            <p class="reveal">Le Télégramme, 7 jours à Brest,BMA,Monceau, Rapid'Flore, Chronopost, Coliposte, Adrexo, TCS,
             Alliance healthcare, CERP...</p>
         </section>
 
-        <section class="Contact reveal">
-            <h1>Contactez-nous</h1>
+        <section class="Contact">
+            <h1 class="reveal">Contactez-nous</h1>
             <div class="Contact_wrap">
                 <div>
                     <div class="wrap reveal">
-                        <p>Par téléphone</p>
+                        <p >Par téléphone</p>
                         <b>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</b>
                     </div>
                     <div class="wrap reveal">
@@ -325,8 +325,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a href="mailto:mikquere@free.fr">mikquere@free.fr</a>
                     </div>
                 </div>
-                <form>
-                    <div class="form_wrap reveal">
+                <form class="reveal">
+                    <div class="form_wrap">
                         <div>
                             <label>Nom</label>
                             <input/>

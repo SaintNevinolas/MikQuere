@@ -18,6 +18,28 @@ nav{display: flex;gap: 30px;align-items: center;}
     --red:#b5121b; --red-h:#930e16;
     --wrap:1200px; --gut:clamp(16px,5vw,48px);
 }
+a[href="#top"]{
+    text-decoration: none;
+}
+nav a{
+    text-decoration: none;
+    position: relative;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+nav a:hover::after{
+    transform: scaleX(1);
+}
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -35,6 +57,12 @@ section{
 .Presentation{
     background-color: var(--olive);
     color: #FFFFFF;
+    display: flex;
+}
+img{
+    overflow: hidden;
+    object-fit: cover;
+    width: 80%;
 }
 .Statistiques{
     background-color: var(--paper);
@@ -70,6 +98,13 @@ section{
     display: flex;
     background-color: var(--ink);
     color: #FFFFFF;
+}
+.Transports{
+    display: flex;
+}
+.Transports img{
+    width: 50%;
+    height: 50%;
 }
 .Confiance{
     justify-items: center;
@@ -138,10 +173,13 @@ button{
 
     <main>
         <section class="Presentation">
-            <h1>Courses express urgentes et tournées régulières</h1>
-            <p>Un colis, un pli, du matériel à livrer en urgence ou chaque semaine ?
-                Courses, tournées dédiées ou messagerie : notre équipe s’en charge, dans le respect de vos délais.</p>
-            <button>Demander un devis</button><button>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</button>
+            <div>
+                <h1>Courses express urgentes et tournées régulières</h1>
+                <p>Un colis, un pli, du matériel à livrer en urgence ou chaque semaine ?
+                    Courses, tournées dédiées ou messagerie : notre équipe s’en charge, dans le respect de vos délais.</p>
+                <button>Demander un devis</button><button>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</button>
+            </div>
+            <img alt="" src="fourgon-route.webp">
         </section>
         <section class="Statistiques">
             <table>
@@ -182,20 +220,23 @@ button{
             </ul> -->
         </section>
 
-        <section>
-            <h1>Ce que nous transportons pour vous</h1>
-            <table>
-                <ul class="table_wrap">
-                    <li>Colis<hr></li>
-                    <li>Matériel Nucléaire<hr></li>
-                    <li>Fleurs<hr></li>
-                    <li>Matériel médical<hr></li>
-                    <li>Presse<hr></li>
-                    <li>Matériel divers<hr></li>
-                    <li>Pli et appels d'offres<hr></li>
-                    <li>Et selon vos demandes...<hr></li>
-                </ul>
-            </table>
+        <section class="Transports">
+            <div>
+                <h1>Ce que nous transportons pour vous</h1>
+                <table>
+                    <ul class="table_wrap">
+                        <li>Colis<hr></li>
+                        <li>Matériel Nucléaire<hr></li>
+                        <li>Fleurs<hr></li>
+                        <li>Matériel médical<hr></li>
+                        <li>Presse<hr></li>
+                        <li>Matériel divers<hr></li>
+                        <li>Pli et appels d'offres<hr></li>
+                        <li>Et selon vos demandes...<hr></li>
+                    </ul>
+                </table>
+            </div>
+            <img src="livraison-diable.webp" >
         </section>
 
         <section class="Moyens">

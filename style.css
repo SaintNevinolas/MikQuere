@@ -60,6 +60,7 @@ section{
     color: #FFFFFF;
     display: flex;
     padding-left: 20px;
+    min-height: calc(100dvh - 74px);
 }
 img{
     overflow: hidden;

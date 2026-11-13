@@ -55,7 +55,12 @@ main{
     grid-template-columns:1fr;
     align-items: start;
 }
-section{
+main > section{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+main > div{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -82,6 +87,9 @@ img{
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
+}
+.Statistiques thead {
+    border: 1px solid black;
 }
 .Statistiques td{
     border: 1px solid black;

@@ -15,7 +15,6 @@ body{
 a[href="#top"]{
     text-decoration: none;
     color: #000000;
-
 }
 .headerwrap{
     display:flex;

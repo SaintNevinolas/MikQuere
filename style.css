@@ -5,6 +5,9 @@
     --red:#b5121b; --red-h:#930e16;
     --wrap:1200px; --gut:clamp(16px,5vw,48px);
 }
+*{
+    box-sizing: border-box;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -26,6 +29,7 @@ a[href="#top"]{
     gap:26px;
     min-height:74px;
     width: 100%;
+    max-width: 100%;
     background-color: #FFFFFF;
     z-index: 1;
 }
@@ -171,7 +175,6 @@ form button{
 }
 .form_message textarea{
     width: 100%;
-    box-sizing: border-box;
 }
 main a:hover{
     color:var(--red-h)

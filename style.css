@@ -215,8 +215,14 @@ input,textarea{
     background:#fff;
 }
 footer{
+    background-color: var(--olive);
+    color: #FFFFFF;
+    margin: 0;
+}
+.footerwrap{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 .size_16{
     font-size: 24px;

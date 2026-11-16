@@ -124,8 +124,8 @@ img{
 .Transports img{
     width: 45%;
     height: auto;
-    /* object-fit: contain; */
-    /* display: block; */
+    object-fit: contain;
+    display: block;
 }
 .Confiance{
     justify-items: center;

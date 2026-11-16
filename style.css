@@ -91,10 +91,14 @@ img{
 .Statistiques thead {
     border: 1px solid var(--on-olive-soft);
 }
+.Statistiques th {
+    padding: 20px;
+}
 .Statistiques td{
     border: 1px solid var(--on-olive-soft);
     text-align: center;
     vertical-align: top;
+    padding: 20px;
 }
 .Moyens table{
     border-collapse: collapse;
@@ -206,4 +210,14 @@ input,textarea{
     border-radius: 3px;
     border:1px solid #cfc8b3;
     background:#fff;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.size_16{
+    font-size: 24px;
+}
+.size_26{
+    font-size: 32px;
 }

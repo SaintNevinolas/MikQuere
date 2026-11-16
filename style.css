@@ -15,7 +15,8 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-a[href="#top"]{
+a[href="#top"],a[href="#top"]:link,a[href="#top"]:hover,
+a[href="#top"]:visited,a[href="#top"]:active{
     text-decoration: none;
     color: #000000;
 }
@@ -221,7 +222,7 @@ input,textarea{
 footer{
     background-color: var(--olive);
     color: #FFFFFF;
-    margin: 0;
+    padding: 0 50px 0 50px;
 }
 .footerwrap{
     display: flex;

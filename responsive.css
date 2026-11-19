@@ -1,0 +1,168 @@
+/* =========================================
+   TABLETTES
+========================================= */
+
+@media screen and (max-width: 1024px) {
+
+    /* HEADER */
+    .headerwrap {
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    /* PRÉSENTATION */
+    .Presentation{
+        min-height: calc(50dvh - 74px);
+    }
+    .Presentation p {
+        padding: 0 30px;
+    }
+
+    /* GRILLES */
+    .table_wrap,
+    .form_wrap {
+        gap: 15px;
+    }
+    .Statistiques table {
+        display: block;
+        width: 100%;
+        table-layout: auto;
+    }
+    
+    .Statistiques thead,
+    .Statistiques tbody {
+        display: block;
+        width: 100%;
+    }
+    
+    .Statistiques tbody tr:last-child {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+    }
+    .Statistiques tbody tr:last-child td:last-child {
+        grid-column: 1 / -1;
+    }
+    
+    .Statistiques th,
+    .Statistiques td {
+        padding: 8px;
+        overflow-wrap: anywhere;
+        min-width: 0;
+    }
+    /* FOOTER */
+    footer {
+        padding: 0 25px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILES
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* HEADER */
+    .headerwrap {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* PRÉSENTATION */
+    .Presentation {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .Presentation p {
+        padding: 0;
+        font-size: 16px;
+    }
+
+    /* GRILLES */
+    .table_wrap,
+    .form_wrap {
+        grid-template-columns: 1fr;
+    }
+
+    /* TRANSPORTS */
+    .Transports {
+        flex-direction: column;
+    }
+
+    .Transports img {
+        width: 100%;
+    }
+
+    /* CONTACT */
+    .Contact_wrap {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    /* BOUTONS */
+    .button_row {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    /* FOOTER */
+    .footerwrap {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+}
+
+
+/* =========================================
+   PETITS MOBILES
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    .headerwrap{
+        align-items: start;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    
+    .size_16 {
+        font-size: 20px;
+    }
+    
+    .size_26 {
+        font-size: 26px;
+    }
+    
+    .Statistiques th,
+    .Statistiques td {
+        padding: 8px;
+        overflow-wrap: anywhere;
+        min-width: 0;
+    }
+    /* .Statistiques .size_16{
+        font-size: 16;
+        } */
+        button {
+            max-width: 100%;
+        }
+        
+        img{
+            display: none;
+        }
+    }

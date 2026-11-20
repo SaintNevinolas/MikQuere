@@ -1,7 +1,7 @@
 :root{
     --ink:#1c1a14; --soft:#3e3b31; --muted:#5f5b4f;
     --paper:#f0efdf; --surface:#fbfaf6; --sable:#e8e4d6; --line:#d6d0bd;
-    --olive:#4a4529; --olive-2:#37331d; --olive-3:#5c5636; --on-olive:#f2efe4; --on-olive-soft:#cfc9b2;
+    --olive:#555555; --olive-2:#3a3a3a; --olive-3:#707070; --on-olive:#f5f5f5; --on-olive-soft:#d6d6d6;
     --red:#b5121b; --red-h:#930e16;
     --wrap:1200px; --gut:clamp(16px,5vw,48px);
 }
@@ -19,6 +19,28 @@ a[href="#top"],a[href="#top"]:link,a[href="#top"]:hover,
 a[href="#top"]:visited,a[href="#top"]:active{
     text-decoration: none;
     color: #000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+a[href="#top"] hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000000;
+    margin: 4px 0;
+}
+.footerwrap a[href="#top"]{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footerwrap a hr{
+    width: 100%;
+    border: none;
+    border-top: 1px solid #FFFFFF;
+    margin: 4px 0;
 }
 .headerwrap{
     display:flex;
@@ -199,10 +221,6 @@ h1{
     padding: 0 60px 0 60px;
     font-size: 20px;
 }
-.Stock{
-    background-color: var(--paper);
-    display: flex;
-}
 .button_row{
     padding: 0 0 0 60px;
     display: flex;
@@ -220,7 +238,7 @@ input,textarea{
     background:#fff;
 }
 footer{
-    background-color: var(--olive);
+    background-color: #000000;
     color: #FFFFFF;
     padding: 0 50px 0 50px;
 }
@@ -240,4 +258,50 @@ footer a:hover {
 }
 .size_26{
     font-size: 32px;
+}
+
+
+/* STOCK */
+
+.Stock {
+    display: flex;
+    background-color: var(--paper);
+    padding: 0 var(--gut) 50px var(--gut);
+}
+
+.Stock_container {
+    max-width: var(--wrap);
+    margin: auto;
+}
+
+.Stock_intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Stock_intro p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.Stock_services {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.Stock_card {
+    background-color: var(--surface);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* .Stock_card h2 {
+    color: var(--olive);
+} */
+
+.Stock_card p,
+.Stock_card li {
+    line-height: 1.6;
 }

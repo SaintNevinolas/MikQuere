@@ -57,6 +57,9 @@
         display: flex;
         flex-direction: column;
     }
+    .Moyens{
+        flex-direction: column;
+    }
     .Contact_wrap{
         display: flex;
         flex-direction: column;
@@ -99,7 +102,7 @@
     /* GRILLES */
     .table_wrap,
     .form_wrap {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     /* TRANSPORTS */
@@ -166,11 +169,14 @@
     /* .Statistiques .size_16{
         font-size: 16;
         } */
-        button {
-            max-width: 100%;
-        }
-        
-        img{
-            display: none;
-        }
+    button {
+        max-width: 100%;
     }
+    
+    img{
+        display: none;
+    }
+    .transports_image{
+        display: none;
+    }
+}

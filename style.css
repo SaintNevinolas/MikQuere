@@ -159,7 +159,34 @@ img{
     display: block;
 }
 .Confiance{
-    justify-items: center;
+    text-align: center;
+    padding: 0 8% 30px 8%;
+}
+.references_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.reference{
+    background-color: var(--on-olive);
+    border-radius: 25px;
+    text-align: left;
+    padding: 15px;
+}
+.reference:last-child:nth-child(odd){
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 50%;
+}
+.reference p {
+    margin: 5px 0;
+    font-weight: 600;
+}
+.reference span {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #666;
 }
 .Contact{
     background-color: var(--paper);
@@ -304,4 +331,156 @@ footer a:hover {
 .Stock_card p,
 .Stock_card li {
     line-height: 1.6;
+}
+.Contact {
+    background-color: var(--paper);
+    padding: 0 8% 40px 8%;
+}
+
+.Contact h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact_intro {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #777;
+}
+
+.Contact_wrap {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: stretch;
+}
+
+
+/* ==============================
+   COORDONNÉES
+============================== */
+
+.contact_infos {
+    background-color: var(--red);
+    color: white;
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact_infos h2 {
+    margin-bottom: 10px;
+}
+
+.contact_card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.contact_icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.contact_card p {
+    margin: 0 0 5px;
+    opacity: 0.75;
+}
+
+.contact_card a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+.contact_note {
+    margin-top: auto;
+    opacity: 0.75;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   FORMULAIRE
+============================== */
+
+.contact_form {
+    background-color: white;
+    padding: 0 35px 35px 35px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.contact_form h2 {
+    margin-bottom: 30px;
+}
+
+.form_wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form_wrap > div,
+.form_message {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact_form label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.contact_form input,
+.contact_form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafaf8;
+    font: inherit;
+}
+
+/* ==============================
+   ZONE MESSAGE
+============================== */
+
+.form_message {
+    margin-top: 10px;
+}
+
+.contact_form textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+
+/* ==============================
+   BOUTON ENVOI
+============================== */
+
+.contact_form button {
+    margin-top: 25px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--red);
+    color: white;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
 }

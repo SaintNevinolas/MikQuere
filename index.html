@@ -194,7 +194,7 @@
 </section>
 
 
-        <section id="References" class="Confiance">
+        <!-- <section id="References" class="Confiance">
             <h1 class="reveal">Ils nous font confiance</h1>
             <div>
                 <h2>Pour des tournées régulières</h2>
@@ -205,9 +205,61 @@
                 <p class="reveal">LM2S, Dehon - Climalife, Clients à la demande</p>
             </div>
 
+        </section> -->
+
+        <section id="References" class="Confiance">
+            <h1 class="reveal">Ils nous font confiance</h1>
+            <div class="activite">
+                <h2>Pour des tournées régulières</h2>
+                <div class="references_grid">
+                    <article class="reference">
+                        <h3>Santé et pharmacies</h3>
+                        <p>Cencora - Alliance Healthcare</p>
+                        <p>CERP Bretagne Atlantique</p>
+                        <span>Produits pharmaceutiques et dispositifs médicaux</span>
+                    </article>
+                    <article class="reference">
+                        <h3>Transport de colis</h3>
+                        <p>Chronopost</p>
+                        <p>Geodis</p>
+                        <span>Colis professionnels et particuliers</span>
+                    </article>
+                    <article class="reference">
+                        <h3>Presse et journeaux</h3>
+                        <p>Le Télégramme</p>
+                        <p>Ouest France</p>
+                        <span>Quotidiens régionaux et presse nationale</span>
+                    </article>
+                    <article class="reference">
+                        <h3>Plis et colics bancaires</h3>
+                        <p>Sterne - TCS</p>
+                        <span>Transport de plis et colis bancaires</span>
+                    </article>
+                </div>
+            </div>
+            <div class="activite">
+                <h2>Pour des courses express</h2>
+                <div class="references_grid">
+                    <article class="reference">
+                        <h3>Informatique</h3>
+                        <p>LM2S</p>
+                        <span>Pièces et composants informatiques</span>
+                    </article>
+                    <article class="reference">
+                        <h3>Gaz</h3>
+                        <p>Dehon - Climalife</p>
+                        <span>Transport de bouteilles de gaz</span>
+                    </article>
+                    <article class="reference">
+                        <h3>Courses à la demande</h3>
+                        <p>Clients professionnels et particuliers</p>
+                        <span>Plis, appels d'offres, colis, matériel et transports spécifiques</span>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="Contact" class="Contact">
+        <!-- <section id="Contact" class="Contact">
             <h1 class="reveal">Contactez-nous</h1>
             <div class="Contact_wrap">
                 <div>
@@ -254,7 +306,103 @@
                     <button>Envoyer ma demande</button>
                 </form>
             </div>
-        </section>
+        </section> -->
+        
+<section id="Contact" class="Contact">
+
+    <h1 class="reveal">Contactez-nous</h1>
+    <p class="contact_intro reveal">
+        Une question, un besoin de transport ou une demande de devis ?
+        Notre équipe s’en charge, dans le respect de vos délais et procédures.
+    </p>
+
+    <div class="Contact_wrap">
+
+        <div class="contact_infos reveal">
+
+            <h2>Nos coordonnées</h2>
+
+            <div class="contact_card">
+                <div class="contact_icon">&phone;</div>
+                <div>
+                    <p>Par téléphone</p>
+                    <a href="tel:numero">06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</a>
+                </div>
+            </div>
+
+            <div class="contact_card">
+                <div class="contact_icon">&#9993;</div>
+                <div>
+                    <p>Par mail</p>
+                    <a href="mailto:adressemail">adressemail</a>
+                </div>
+            </div>
+
+            <p class="contact_note">
+                Nous sommes à votre disposition pour répondre
+                à toutes vos demandes.
+            </p>
+
+        </div>
+
+        <form id="ContactForm" class="contact_form"
+              autocomplete="on">
+
+            <h2>Envoyez-nous un message</h2>
+
+            <div class="form_wrap">
+
+                <div>
+                    <label for="name">Nom</label>
+                    <input id="name" name="name"
+                           autocomplete="family-name" required>
+                </div>
+
+                <div>
+                    <label for="company">Société</label>
+                    <input id="company" name="company"
+                           autocomplete="organization">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email"
+                           type="email" autocomplete="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Téléphone</label>
+                    <input id="phone" name="phone"
+                           type="tel" autocomplete="tel">
+                </div>
+
+                <div>
+                    <label for="address">Adresse</label>
+                    <input id="address" name="address"
+                           autocomplete="street-address">
+                </div>
+
+                <div>
+                    <label for="subject">Objet</label>
+                    <input id="subject" name="subject">
+                </div>
+
+            </div>
+
+            <div class="form_message">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                          placeholder="Détails concernant votre demande"
+                          required></textarea>
+            </div>
+
+            <button type="submit">Envoyer ma demande</button>
+
+        </form>
+
+    </div>
+</section>
+
     </main>
     <footer>
         <div class="footerwrap">
@@ -283,7 +431,7 @@
                 <p>Responsable de la publication : Mikaël QUERE</p>
             </div>
             <div>
-                <p>© 2026 Mikaël Quéré Transport</p>
+                <p>&copy; 2026 Mikaël Quéré Transport</p>
             </div>
         </div>
     </footer>

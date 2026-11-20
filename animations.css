@@ -22,3 +22,31 @@ nav a:hover::after{
     opacity: 1;
     transform: translateX(0);
 }
+
+.contact_card a{
+    transition: opacity 0.2s;
+}
+.contact_card a:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+.contact_form input,
+.contact_form textarea{
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.contact_form input:focus,
+.contact_form textarea:focus {
+    outline: none;
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(181, 18, 27, 0.12);
+}
+.contact_form button{
+    transition: background-color 0.2s, transform 0.2s;
+}
+.contact_form button:hover {
+    background-color: var(--red-h);
+    transform: translateY(-2px);
+}
+.contact_form button:active {
+    transform: translateY(0);
+}

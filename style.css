@@ -93,7 +93,7 @@ main > div{
     width: 100%;
 }
 .Presentation{
-    background-color: var(--olive);
+    background-color: #303236;
     color: #FFFFFF;
     display: flex;
     padding-left: 20px;
@@ -136,14 +136,14 @@ img{
     text-align: center;
 }
 .Moyens td:first-child{
-    border-right: 1px solid var(--olive-2);
+    border-right: 1px solid var(--on-olive);
 }
 .Moyens tr:first-child td{
-    border-bottom: 1px solid var(--olive-2);
+    border-bottom: 1px solid var(--on-olive);
 }
 .Moyens{
     display: flex;
-    background-color: var(--ink);
+    background-color: #303236;
     color: #FFFFFF;
     padding-left: 20px;
 }

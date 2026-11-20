@@ -8,11 +8,11 @@
     .headerwrap {
         gap: 15px;
     }
-
+    
     nav {
         gap: 15px;
     }
-
+    
     /* PRÉSENTATION */
     .Presentation{
         min-height: calc(50dvh - 74px);
@@ -20,7 +20,7 @@
     .Presentation p {
         padding: 0 30px;
     }
-
+    
     /* GRILLES */
     .table_wrap,
     .form_wrap {
@@ -53,11 +53,19 @@
         overflow-wrap: anywhere;
         min-width: 0;
     }
+    .Stock_services{
+        display: flex;
+        flex-direction: column;
+    }
+    .Contact_wrap{
+        display: flex;
+        flex-direction: column;
+    }
     /* FOOTER */
     footer {
         padding: 0 25px;
     }
-
+    
 }
 
 

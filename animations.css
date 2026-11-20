@@ -22,7 +22,9 @@ nav a:hover::after{
     opacity: 1;
     transform: translateX(0);
 }
-
+.transports_image:hover img {
+    transform: scale(1.04);
+}
 .contact_card a{
     transition: opacity 0.2s;
 }

@@ -40,13 +40,13 @@ nav a:hover::after{
     border-color: var(--red);
     box-shadow: 0 0 0 3px rgba(181, 18, 27, 0.12);
 }
-.contact_form button{
+button{
     transition: background-color 0.2s, transform 0.2s;
 }
-.contact_form button:hover {
+button:hover {
     background-color: var(--red-h);
     transform: translateY(-2px);
 }
-.contact_form button:active {
+button:active {
     transform: translateY(0);
 }

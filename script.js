@@ -53,13 +53,21 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('subject').addEventListener('change',function(){
         console.log(this.value)
         if(this.value!="candidature"){
-            document.getElementById('champ_enlevement').style.display = "block";
-            document.getElementById('champ_destination').style.display = "block";
+            Array.from(document.getElementById('champ_destination').children).forEach(element=>{
+                element.hidden = false;
+            })
+            Array.from(document.getElementById('champ_enlevement').children).forEach(element=>{
+                element.hidden = false;
+            })
             document.getElementById('enlevement').required = true;
             document.getElementById('destination').required = true;
         }else{
-            document.getElementById('champ_enlevement').style.display = "none";
-            document.getElementById('champ_destination').style.display = "none";
+            Array.from(document.getElementById('champ_destination').children).forEach(element=>{
+                element.hidden = true;
+            })
+            Array.from(document.getElementById('champ_enlevement').children).forEach(element=>{
+                element.hidden = true;
+            })
             document.getElementById('enlevement').required = false;
             document.getElementById('destination').required = false;
         }

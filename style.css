@@ -1,6 +1,8 @@
 :root{
     --ink:#1c1a14; --soft:#3e3b31; --muted:#5f5b4f;
-    --paper:#f0efdf; --surface:#fbfaf6; --sable:#e8e4d6; --line:#d6d0bd;
+    /* --paper:#f0efdf; */
+    --paper:#c2c7d3;
+     --surface:#fbfaf6; --sable:#e8e4d6; --line:#d6d0bd;
     --olive:#555555; --olive-2:#3a3a3a; --olive-3:#707070; --on-olive:#f5f5f5; --on-olive-soft:#d6d6d6;
     --red:#b5121b; --red-h:#930e16;
     --wrap:1200px; --gut:clamp(16px,5vw,48px);
@@ -94,7 +96,7 @@ main > div{
     width: 100%;
 }
 .Presentation{
-    background-color: #303236;
+    background-color: #6b6f79;
     color: #FFFFFF;
     display: flex;
     padding-left: 20px;
@@ -109,18 +111,18 @@ img{
     background-color: var(--paper);
 }
 .Statistiques table{
-    border: 1px solid var(--on-olive-soft);
+    border: 1px solid var(--on-olive);
     border-collapse: collapse;
     width: 100%;
 }
 .Statistiques thead {
-    border: 1px solid var(--on-olive-soft);
+    border: 1px solid var(--on-olive);
 }
 .Statistiques th {
     padding: 20px;
 }
 .Statistiques td{
-    border: 1px solid var(--on-olive-soft);
+    border: 1px solid var(--on-olive);
     text-align: center;
     vertical-align: top;
     padding: 20px;
@@ -141,7 +143,7 @@ img{
 }
 .Moyens{
     display: flex;
-    background-color: #303236;
+    background-color: #6b6f79;
     color: #FFFFFF;
     padding: 30px 5%;
 }
@@ -311,17 +313,17 @@ h1{
     display: flex;
     gap: 20px;
 }
-input{
+input,select{
     height: 30px;
 }
 textarea{
     height: 70px;
 }
-input,textarea{
+/* input,select,textarea{
     border-radius: 3px;
     border:1px solid #cfc8b3;
     background:#fff;
-}
+} */
 footer{
     background-color: #000000;
     color: #FFFFFF;
@@ -503,10 +505,11 @@ footer a:hover {
 }
 
 .contact_form input,
+.contact_form select,
 .contact_form textarea {
     box-sizing: border-box;
     width: 100%;
-    padding: 12px 14px;
+    padding: 0px 14px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fafaf8;

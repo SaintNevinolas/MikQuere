@@ -228,7 +228,7 @@ img{
     gap: 20px;
 }
 .reference{
-    background-color: var(--on-olive);
+    background-color: var(--paper);
     border-radius: 25px;
     text-align: left;
     padding: 15px;
@@ -246,7 +246,7 @@ img{
     display: block;
     margin-top: 12px;
     font-size: 0.9rem;
-    color: #666;
+    /* color: #666; */
 }
 .Contact{
     background-color: var(--paper);

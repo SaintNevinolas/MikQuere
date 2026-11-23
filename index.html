@@ -20,6 +20,7 @@
             <a href="" >Solutions</a>
             <a href="" >Tournées</a>
             <a href="#Moyens" >Moyens</a>
+            <a href="#Stock" >Stockage</a>
             <a href="#References" >Références</a>
             <a href="#Contact" >Contact</a>
             <button>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</button>
@@ -92,11 +93,11 @@
                 <!-- <table class="reveal"> -->
                     <ul class="reveal table_wrap size_16">
                         <li>Colis<hr></li>
+                        <li>Médicaments et matériel médical<hr></li>
+                        <li>Presse et magazines<hr></li>
+                        <li>Pli et appels d'offres<hr></li>
                         <li>Composants informatiques<hr></li>
                         <li>Bouteilles de gaz<hr></li>
-                        <li>Matériel médical<hr></li>
-                        <li>Presse<hr></li>
-                        <li>Pli et appels d'offres<hr></li>
                         <li>Matériel divers<hr></li>
                         <li>Et selon vos demandes...<hr></li>
                     </ul>
@@ -229,9 +230,10 @@
                         <span>Colis professionnels et particuliers</span>
                     </article>
                     <article class="reference reveal">
-                        <h3>Presse et journeaux</h3>
+                        <h3>Presse et journaux</h3>
                         <p>Le Télégramme</p>
                         <p>Ouest France</p>
+                        <p>Magazines</p>
                         <span>Quotidiens régionaux et presse nationale</span>
                     </article>
                     <article class="reference reveal">
@@ -388,7 +390,21 @@
 
                 <div>
                     <label for="subject">Objet</label>
-                    <input id="subject" name="subject">
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Veuillez sélectionner --</option>
+                        <option value="express">Course express</option>
+                        <option value="tournee">Tournée régulière</option>
+                        <option value="stockage">Stockage</option>
+                        <option value="candidature">Proposer ma candidature</option>
+                    </select>
+                </div>
+                <div id="champ_enlevement">
+                    <label>Commune d'enlèvement</label>
+                    <input id="enlevement" name="enlevement" placeholder="Adresse et commune">
+                </div>
+                <div id="champ_destination">
+                    <label>Commune de destination</label>
+                    <input id="destination" name="destination" placeholder="Adresse et commune">
                 </div>
 
             </div>

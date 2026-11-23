@@ -50,14 +50,27 @@ document.addEventListener("DOMContentLoaded", () => {
         detectOverflow();
     });
 
+    document.getElementById('subject').addEventListener('change',function(){
+        console.log(this.value)
+        if(this.value!="candidature"){
+            document.getElementById('champ_enlevement').style.display = "block";
+            document.getElementById('champ_destination').style.display = "block";
+            document.getElementById('enlevement').required = true;
+            document.getElementById('destination').required = true;
+        }else{
+            document.getElementById('champ_enlevement').style.display = "none";
+            document.getElementById('champ_destination').style.display = "none";
+            document.getElementById('enlevement').required = false;
+            document.getElementById('destination').required = false;
+        }
+    });
+
     // Gestion de l'ouverture de mail du formulaire
     const form = document.getElementById("ContactForm");
-
     if (!form) {
         console.error("Formulaire ContactForm introuvable !");
         return;
     }
-
     form.addEventListener("submit", function(e) {
         e.preventDefault();
 

@@ -18,11 +18,12 @@
             <small>Transport</small>
         </a>
         <nav>
-            <a href="" >Solutions</a>
-            <a href="" >Tournées</a>
-            <a href="#Moyens" >Moyens</a>
-            <a href="#References" >Références</a>
-            <a href="#Contact" >Contact</a>
+            <a href="#Presentation">Présentation</a>
+            <a href="#Transports">Transports</a>
+            <a href="#Moyens">Moyens</a>
+            <a href="#Stock">Stockage</a>
+            <a href="#References">Références</a>
+            <a href="#Contact">Contact</a>
             <button>06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</button>
             <button onclick="document.getElementById('Contact').scrollIntoView()">
                 Demander un devis</button> 
@@ -31,7 +32,7 @@
     </header>
 
     <main>
-        <section class="Presentation">
+        <section id="Presentation" class="Presentation">
             <div>
                 <h1 class="reveal">Courses express urgentes et tournées régulières</h1>
                 <p class="reveal">Un colis, un pli, du matériel à livrer en urgence ou chaque semaine ?
@@ -87,17 +88,17 @@
             </ul> -->
         </div>
 
-        <section class="Transports">
+        <section id="Transports" class="Transports">
             <div class="transports_content">
                 <h1 class="reveal">Ce que nous transportons pour vous</h1>
                 <!-- <table class="reveal"> -->
                     <ul class="reveal table_wrap size_16">
                         <li>Colis<hr></li>
+                        <li>Médicaments et matériel médical<hr></li>
+                        <li>Presse et magazines<hr></li>
+                        <li>Pli et appels d'offres<hr></li>
                         <li>Composants informatiques<hr></li>
                         <li>Bouteilles de gaz<hr></li>
-                        <li>Matériel médical<hr></li>
-                        <li>Presse<hr></li>
-                        <li>Pli et appels d'offres<hr></li>
                         <li>Matériel divers<hr></li>
                         <li>Et selon vos demandes...<hr></li>
                     </ul>
@@ -215,27 +216,28 @@
         <section id="References" class="Confiance">
             <h1 class="reveal">Ils nous font confiance</h1>
             <div class="activite">
-                <h2>Pour des tournées régulières</h2>
+                <h2 class="reveal">Pour des tournées régulières</h2>
                 <div class="references_grid">
-                    <article class="reference">
+                    <article class="reference reveal">
                         <h3>Santé et pharmacies</h3>
                         <p>Cencora - Alliance Healthcare</p>
                         <p>CERP Bretagne Atlantique</p>
                         <span>Produits pharmaceutiques et dispositifs médicaux</span>
                     </article>
-                    <article class="reference">
+                    <article class="reference reveal">
                         <h3>Transport de colis</h3>
                         <p>Chronopost</p>
                         <p>Geodis</p>
                         <span>Colis professionnels et particuliers</span>
                     </article>
-                    <article class="reference">
-                        <h3>Presse et journeaux</h3>
+                    <article class="reference reveal">
+                        <h3>Presse et journaux</h3>
                         <p>Le Télégramme</p>
                         <p>Ouest France</p>
+                        <p>Magazines</p>
                         <span>Quotidiens régionaux et presse nationale</span>
                     </article>
-                    <article class="reference">
+                    <article class="reference reveal">
                         <h3>Plis et colics bancaires</h3>
                         <p>Sterne - TCS</p>
                         <span>Transport de plis et colis bancaires</span>
@@ -243,19 +245,19 @@
                 </div>
             </div>
             <div class="activite">
-                <h2>Pour des courses express</h2>
+                <h2 class="reveal">Pour des courses express</h2>
                 <div class="references_grid">
-                    <article class="reference">
+                    <article class="reference reveal">
                         <h3>Informatique</h3>
                         <p>LM2S</p>
                         <span>Pièces et composants informatiques</span>
                     </article>
-                    <article class="reference">
+                    <article class="reference reveal">
                         <h3>Gaz</h3>
                         <p>Dehon - Climalife</p>
                         <span>Transport de bouteilles de gaz</span>
                     </article>
-                    <article class="reference">
+                    <article class="reference reveal">
                         <h3>Courses à la demande</h3>
                         <p>Clients professionnels et particuliers</p>
                         <span>Plis, appels d'offres, colis, matériel et transports spécifiques</span>
@@ -313,100 +315,113 @@
             </div>
         </section> -->
         
-<section id="Contact" class="Contact">
+    <section id="Contact" class="Contact">
+        <h1 class="reveal">Contactez-nous</h1>
+        <p class="contact_intro reveal">
+            Une question, un besoin de transport ou une demande de devis ?
+            Notre équipe s’en charge, dans le respect de vos délais et procédures.
+        </p>
 
-    <h1 class="reveal">Contactez-nous</h1>
-    <p class="contact_intro reveal">
-        Une question, un besoin de transport ou une demande de devis ?
-        Notre équipe s’en charge, dans le respect de vos délais et procédures.
-    </p>
+        <div class="Contact_wrap">
 
-    <div class="Contact_wrap">
+            <div class="contact_infos reveal">
 
-        <div class="contact_infos reveal">
+                <h2>Nos coordonnées</h2>
 
-            <h2>Nos coordonnées</h2>
-
-            <div class="contact_card">
-                <div class="contact_icon">&phone;</div>
-                <div>
-                    <p>Par téléphone</p>
-                    <a href="tel:numero">06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</a>
+                <div class="contact_card">
+                    <div class="contact_icon">&phone;</div>
+                    <div>
+                        <p>Par téléphone</p>
+                        <a href="tel:numero">06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</a>
+                    </div>
                 </div>
+
+                <div class="contact_card">
+                    <div class="contact_icon">&#9993;</div>
+                    <div>
+                        <p>Par mail</p>
+                        <a href="mailto:mikquere@free.fr">mikquere@free.fr</a>
+                    </div>
+                </div>
+
+                <p class="contact_note">
+                    Nous sommes à votre disposition pour répondre
+                    à toutes vos demandes.
+                </p>
+
             </div>
 
-            <div class="contact_card">
-                <div class="contact_icon">&#9993;</div>
-                <div>
-                    <p>Par mail</p>
-                    <a href="mailto:adressemail">adressemail</a>
-                </div>
-            </div>
+            <form id="ContactForm" class="contact_form reveal"
+                autocomplete="on">
 
-            <p class="contact_note">
-                Nous sommes à votre disposition pour répondre
-                à toutes vos demandes.
-            </p>
+                <h2>Envoyez-nous un message</h2>
+
+                <div class="form_wrap">
+
+                    <div>
+                        <label for="name">Nom</label>
+                        <input id="name" name="name"
+                            autocomplete="family-name" required>
+                    </div>
+
+                    <div>
+                        <label for="subject">Objet</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Veuillez sélectionner --</option>
+                            <option value="express">Course express</option>
+                            <option value="tournee">Tournée régulière</option>
+                            <option value="stockage">Stockage</option>
+                            <option value="candidature">Proposer ma candidature</option>
+                        </select>
+                    </div>
+                    <div id="champ_enlevement" hidden>
+                        <label hidden>Commune d'enlèvement</label>
+                        <input hidden id="enlevement" name="enlevement" placeholder="Adresse et commune">
+                    </div>
+                    <div hidden id="champ_destination">
+                        <label hidden>Commune de destination</label>
+                        <input hidden id="destination" name="destination" placeholder="Adresse et commune">
+                    </div>
+                    <div>
+                        <label for="company">Société</label>
+                        <input id="company" name="company"
+                        autocomplete="organization">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="email"
+                            type="email" autocomplete="email" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Téléphone</label>
+                        <input id="phone" name="phone"
+                            type="tel" autocomplete="tel">
+                    </div>
+
+                    <!-- <div>
+                        <label for="address">Adresse</label>
+                        <input id="address" name="address"
+                            autocomplete="street-address">
+                    </div> -->
+
+
+                </div>
+
+                <div class="form_message">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"
+                            placeholder="Détails concernant votre demande"
+                            required></textarea>
+                </div>
+
+                <button type="submit">Envoyer ma demande</button>
+
+            </form>
 
         </div>
-
-        <form id="ContactForm" class="contact_form"
-              autocomplete="on">
-
-            <h2>Envoyez-nous un message</h2>
-
-            <div class="form_wrap">
-
-                <div>
-                    <label for="name">Nom</label>
-                    <input id="name" name="name"
-                           autocomplete="family-name" required>
-                </div>
-
-                <div>
-                    <label for="company">Société</label>
-                    <input id="company" name="company"
-                           autocomplete="organization">
-                </div>
-
-                <div>
-                    <label for="email">Email</label>
-                    <input id="email" name="email"
-                           type="email" autocomplete="email" required>
-                </div>
-
-                <div>
-                    <label for="phone">Téléphone</label>
-                    <input id="phone" name="phone"
-                           type="tel" autocomplete="tel">
-                </div>
-
-                <div>
-                    <label for="address">Adresse</label>
-                    <input id="address" name="address"
-                           autocomplete="street-address">
-                </div>
-
-                <div>
-                    <label for="subject">Objet</label>
-                    <input id="subject" name="subject">
-                </div>
-
-            </div>
-
-            <div class="form_message">
-                <label for="message">Message</label>
-                <textarea id="message" name="message"
-                          placeholder="Détails concernant votre demande"
-                          required></textarea>
-            </div>
-
-            <button type="submit">Envoyer ma demande</button>
-
-        </form>
-
-    </div>
-</section>
+    </section>
 
     </main>
     <footer>

@@ -194,7 +194,9 @@ img{
     background-color: var(--red);
     border-radius: 50%;
 }
-
+.Stock_card li::marker{
+    color:var(--red);
+}
 .table_wrap li:last-child {
     color: var(--red);
     font-weight: 600;
@@ -220,6 +222,7 @@ img{
 }
 .Confiance{
     text-align: center;
+    background-color: var(--paper);
     padding: 0 8% 30px 8%;
 }
 .references_grid{
@@ -228,7 +231,7 @@ img{
     gap: 20px;
 }
 .reference{
-    background-color: var(--paper);
+    background-color: var(--surface);
     border-radius: 25px;
     text-align: left;
     padding: 15px;
@@ -405,7 +408,7 @@ footer a:hover {
 .contact_intro {
     text-align: center;
     margin-bottom: 25px;
-    color: #777;
+    /* color: #777; */
 }
 
 .Contact_wrap {

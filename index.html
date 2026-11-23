@@ -314,114 +314,113 @@
             </div>
         </section> -->
         
-<section id="Contact" class="Contact">
+    <section id="Contact" class="Contact">
+        <h1 class="reveal">Contactez-nous</h1>
+        <p class="contact_intro reveal">
+            Une question, un besoin de transport ou une demande de devis ?
+            Notre équipe s’en charge, dans le respect de vos délais et procédures.
+        </p>
 
-    <h1 class="reveal">Contactez-nous</h1>
-    <p class="contact_intro reveal">
-        Une question, un besoin de transport ou une demande de devis ?
-        Notre équipe s’en charge, dans le respect de vos délais et procédures.
-    </p>
+        <div class="Contact_wrap">
 
-    <div class="Contact_wrap">
+            <div class="contact_infos reveal">
 
-        <div class="contact_infos reveal">
+                <h2>Nos coordonnées</h2>
 
-            <h2>Nos coordonnées</h2>
-
-            <div class="contact_card">
-                <div class="contact_icon">&phone;</div>
-                <div>
-                    <p>Par téléphone</p>
-                    <a href="tel:numero">06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</a>
+                <div class="contact_card">
+                    <div class="contact_icon">&phone;</div>
+                    <div>
+                        <p>Par téléphone</p>
+                        <a href="tel:numero">06&nbsp;63&nbsp;46&nbsp;26&nbsp;52</a>
+                    </div>
                 </div>
+
+                <div class="contact_card">
+                    <div class="contact_icon">&#9993;</div>
+                    <div>
+                        <p>Par mail</p>
+                        <a href="mailto:mikquere@free.fr">mikquere@free.fr</a>
+                    </div>
+                </div>
+
+                <p class="contact_note">
+                    Nous sommes à votre disposition pour répondre
+                    à toutes vos demandes.
+                </p>
+
             </div>
 
-            <div class="contact_card">
-                <div class="contact_icon">&#9993;</div>
-                <div>
-                    <p>Par mail</p>
-                    <a href="mailto:mikquere@free.fr">mikquere@free.fr</a>
-                </div>
-            </div>
+            <form id="ContactForm" class="contact_form reveal"
+                autocomplete="on">
 
-            <p class="contact_note">
-                Nous sommes à votre disposition pour répondre
-                à toutes vos demandes.
-            </p>
+                <h2>Envoyez-nous un message</h2>
+
+                <div class="form_wrap">
+
+                    <div>
+                        <label for="name">Nom</label>
+                        <input id="name" name="name"
+                            autocomplete="family-name" required>
+                    </div>
+
+                    <div>
+                        <label for="subject">Objet</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Veuillez sélectionner --</option>
+                            <option value="express">Course express</option>
+                            <option value="tournee">Tournée régulière</option>
+                            <option value="stockage">Stockage</option>
+                            <option value="candidature">Proposer ma candidature</option>
+                        </select>
+                    </div>
+                    <div id="champ_enlevement" hidden>
+                        <label hidden>Commune d'enlèvement</label>
+                        <input hidden id="enlevement" name="enlevement" placeholder="Adresse et commune">
+                    </div>
+                    <div hidden id="champ_destination">
+                        <label hidden>Commune de destination</label>
+                        <input hidden id="destination" name="destination" placeholder="Adresse et commune">
+                    </div>
+                    <div>
+                        <label for="company">Société</label>
+                        <input id="company" name="company"
+                        autocomplete="organization">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="email"
+                            type="email" autocomplete="email" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Téléphone</label>
+                        <input id="phone" name="phone"
+                            type="tel" autocomplete="tel">
+                    </div>
+
+                    <!-- <div>
+                        <label for="address">Adresse</label>
+                        <input id="address" name="address"
+                            autocomplete="street-address">
+                    </div> -->
+
+
+                </div>
+
+                <div class="form_message">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"
+                            placeholder="Détails concernant votre demande"
+                            required></textarea>
+                </div>
+
+                <button type="submit">Envoyer ma demande</button>
+
+            </form>
 
         </div>
-
-        <form id="ContactForm" class="contact_form reveal"
-              autocomplete="on">
-
-            <h2>Envoyez-nous un message</h2>
-
-            <div class="form_wrap">
-
-                <div>
-                    <label for="name">Nom</label>
-                    <input id="name" name="name"
-                           autocomplete="family-name" required>
-                </div>
-
-                <div>
-                    <label for="subject">Objet</label>
-                    <select id="subject" name="subject" required>
-                        <option value="">-- Veuillez sélectionner --</option>
-                        <option value="express">Course express</option>
-                        <option value="tournee">Tournée régulière</option>
-                        <option value="stockage">Stockage</option>
-                        <option value="candidature">Proposer ma candidature</option>
-                    </select>
-                </div>
-                <div id="champ_enlevement" hidden>
-                    <label hidden>Commune d'enlèvement</label>
-                    <input hidden id="enlevement" name="enlevement" placeholder="Adresse et commune">
-                </div>
-                <div hidden id="champ_destination">
-                    <label hidden>Commune de destination</label>
-                    <input hidden id="destination" name="destination" placeholder="Adresse et commune">
-                </div>
-                <div>
-                    <label for="company">Société</label>
-                    <input id="company" name="company"
-                    autocomplete="organization">
-                </div>
-
-                <div>
-                    <label for="email">Email</label>
-                    <input id="email" name="email"
-                           type="email" autocomplete="email" required>
-                </div>
-
-                <div>
-                    <label for="phone">Téléphone</label>
-                    <input id="phone" name="phone"
-                           type="tel" autocomplete="tel">
-                </div>
-
-                <!-- <div>
-                    <label for="address">Adresse</label>
-                    <input id="address" name="address"
-                           autocomplete="street-address">
-                </div> -->
-
-
-            </div>
-
-            <div class="form_message">
-                <label for="message">Message</label>
-                <textarea id="message" name="message"
-                          placeholder="Détails concernant votre demande"
-                          required></textarea>
-            </div>
-
-            <button type="submit">Envoyer ma demande</button>
-
-        </form>
-
-    </div>
-</section>
+    </section>
 
     </main>
     <footer>

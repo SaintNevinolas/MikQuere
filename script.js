@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // Animation d'apparition des éléments .reveal
+    const revealElements = document.querySelectorAll(".reveal");
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -12,9 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, {
         threshold: 0.1
     });
-
-    const revealElements = document.querySelectorAll(".reveal");
-
     revealElements.forEach(element => {
         observer.observe(element);
     });
@@ -47,29 +45,35 @@ document.addEventListener("DOMContentLoaded", () => {
             )
         )
     ).then(() => {
+        console.log(document.documentElement.clientWidth);
         detectOverflow();
     });
 
-    document.getElementById('subject').addEventListener('change',function(){
+    const subject = document.getElementById('subject');
+    const champ_destination = document.getElementById('champ_destination');
+    const champ_enlevement = document.getElementById('champ_enlevement');
+    const destination = document.getElementById('destination');
+    const enlevement = document.getElementById('enlevement');
+    subject.addEventListener('change',function(){
         console.log(this.value)
         if(this.value!="candidature"){
-            Array.from(document.getElementById('champ_destination').children).forEach(element=>{
+            Array.from(champ_destination.children).forEach(element=>{
                 element.hidden = false;
             })
-            Array.from(document.getElementById('champ_enlevement').children).forEach(element=>{
+            Array.from(champ_enlevement.children).forEach(element=>{
                 element.hidden = false;
             })
-            document.getElementById('enlevement').required = true;
-            document.getElementById('destination').required = true;
+            enlevement.required = true;
+            destination.required = true;
         }else{
-            Array.from(document.getElementById('champ_destination').children).forEach(element=>{
+            Array.from(champ_destination.children).forEach(element=>{
                 element.hidden = true;
             })
-            Array.from(document.getElementById('champ_enlevement').children).forEach(element=>{
+            Array.from(champ_enlevement.children).forEach(element=>{
                 element.hidden = true;
             })
-            document.getElementById('enlevement').required = false;
-            document.getElementById('destination').required = false;
+            enlevement.required = false;
+            destination.required = false;
         }
     });
 
@@ -107,4 +111,25 @@ document.addEventListener("DOMContentLoaded", () => {
         // Ouverture de l'application mail
         window.location.href = mailto;
     });
+    //Gestion du menu mobile
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('header nav');
+    hamburger.addEventListener('click', function (event) {
+        event.stopPropagation();
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+    function closeMenu(){
+        hamburger.classList.remove('active');
+        nav.classList.remove('active');
+    };
+    nav.querySelectorAll('a').forEach(link=>{
+        link.addEventListener('click',closeMenu);
+    });
+    document.addEventListener('click',function(event){
+        if(!nav.contains(event.target)&&!hamburger.contains(event.target)){
+            closeMenu();
+        }
+    })
+    window.addEventListener('scroll',closeMenu);
 });

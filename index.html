@@ -365,13 +365,13 @@
                 <div class="form_wrap">
 
                     <div>
-                        <label for="name">Nom</label>
+                        <label for="name" class="required">Nom</label>
                         <input id="name" name="name"
-                            autocomplete="family-name" required>
+                            autocomplete="family-name" placeholder="Vos noms et prénoms" required>
                     </div>
 
                     <div>
-                        <label for="subject">Objet</label>
+                        <label for="subject" class="required">Objet</label>
                         <select id="subject" name="subject" required>
                             <option value="">-- Veuillez sélectionner --</option>
                             <option value="express">Course express</option>
@@ -380,24 +380,10 @@
                             <option value="candidature">Proposer ma candidature</option>
                         </select>
                     </div>
-                    <div id="champ_enlevement" hidden>
-                        <label hidden>Commune d'enlèvement</label>
-                        <input hidden id="enlevement" name="enlevement" placeholder="Adresse et commune">
-                    </div>
-                    <div hidden id="champ_destination">
-                        <label hidden>Commune de destination</label>
-                        <input hidden id="destination" name="destination" placeholder="Adresse et commune">
-                    </div>
                     <div>
-                        <label for="company">Société</label>
-                        <input id="company" name="company"
-                        autocomplete="organization">
-                    </div>
-
-                    <div>
-                        <label for="email">Email</label>
+                        <label for="email" class="required">Email</label>
                         <input id="email" name="email"
-                            type="email" autocomplete="email" required>
+                            type="email" autocomplete="email" placeholder="nom@exemple.com" required>
                     </div>
 
                     <div>
@@ -405,6 +391,20 @@
                         <input id="phone" name="phone"
                             type="tel" autocomplete="tel">
                     </div>
+                    <div id="champ_enlevement" hidden>
+                        <label hidden for="enlevement" class="required">Commune d'enlèvement</label>
+                        <input hidden id="enlevement" name="enlevement" placeholder="Adresse et commune">
+                    </div>
+                    <div hidden id="champ_destination">
+                        <label for="destination" hidden class="required">Commune de destination</label>
+                        <input hidden id="destination" name="destination" placeholder="Adresse et commune">
+                    </div>
+                    <div hidden id="champ_company">
+                        <label for="company" hidden class="required">Société</label>
+                        <input id="company" hidden name="company" placeholder="Nom de l'organisation"
+                        autocomplete="organization">
+                    </div>
+
 
                     <!-- <div>
                         <label for="address">Adresse</label>
@@ -416,7 +416,7 @@
                 </div>
 
                 <div class="form_message">
-                    <label for="message">Message</label>
+                    <label for="message" class="required">Message</label>
                     <textarea id="message" name="message"
                             placeholder="Détails concernant votre demande"
                             required></textarea>

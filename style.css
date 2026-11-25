@@ -92,6 +92,7 @@ main{
     display:grid;
     grid-template-columns:1fr;
     align-items: start;
+    font-size: var(--font-lead);
 }
 main > section{
     margin: 0;
@@ -525,11 +526,16 @@ footer a:hover {
 .contact_form textarea {
     box-sizing: border-box;
     width: 100%;
-    padding: 0px 14px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fafaf8;
     font: inherit;
+}
+.contact_form input,.contact_form textarea{
+    padding: 5px 10px;
+}
+.contact_form select{
+    padding: 0px 10px;
 }
 
 /* ==============================

@@ -109,8 +109,13 @@ main > div{
     color: #FFFFFF;
     display: flex;
     padding-left: 20px;
-    min-height: calc(100dvh - 74px);
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    min-height: calc(100svh - 74px -150px);
 }
+/* .Presentation img{
+    height: 25%;
+} */
 p,span,li{
     font-size: var(--font-body);
 }
@@ -159,6 +164,11 @@ img{
     background-color: #6b6f79;
     color: #FFFFFF;
     padding: 30px 5%;
+}
+.Moyens_content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
 }
 .Transports {
     display: grid;
@@ -218,6 +228,26 @@ img{
 
 /* IMAGE */
 
+.presentation_image {
+    /* width: 50%; */
+    aspect-ratio: 1/1;
+    height: auto;
+    max-height: 360px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+}
+
+.presentation_image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
 .transports_image {
     width: 100%;
     height: 480px;
@@ -227,6 +257,25 @@ img{
 }
 
 .transports_image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+.moyens_image {
+    /* width: 50%; */
+    aspect-ratio: 1/1;
+    height: auto;
+    max-height: 360px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+}
+
+.moyens_image img {
     width: 100%;
     height: 100%;
     display: block;

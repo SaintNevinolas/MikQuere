@@ -39,7 +39,8 @@
     }
     /* HEADER */
     nav {
-        display: none;
+        /* display: none; */
+        visibility: hidden;
         position: absolute;
         top: 100%;
         left: 0;
@@ -53,7 +54,9 @@
         z-index: 1000;
     }
     nav.active{
-        display: flex;
+        /* display: flex; */
+        opacity: 1;
+        visibility: visible;
     }
     nav.active a{
         color: #FFFFFF;
@@ -153,7 +156,7 @@
     }
     /* FOOTER */
     footer {
-        padding: 0 25px;
+        padding: 25px;
     }
     /* BOUTONS */
     .button_row {
@@ -166,11 +169,15 @@
 
 
 /* =========================================
-   MOBILES
+MOBILES
 ========================================= */
 
 @media screen and (max-width: 768px) {
     
+    .footerwrap{
+        flex-direction: column;
+        align-items: start;
+    }
     
 
     /* PRÉSENTATION */
@@ -203,14 +210,14 @@
 
 
     /* FOOTER */
-    .footerwrap {
+    /* .footerwrap {
         flex-direction: column;
         gap: 20px;
     }
 
     footer {
         padding: 20px;
-    }
+    } */
 
 }
 
@@ -243,6 +250,10 @@
         } */
     button {
         max-width: 100%;
+    }
+    .form_wrap{
+        display: flex;
+        flex-direction: column;
     }
     
 }

@@ -64,9 +64,6 @@
     img{
         display: none;
     }
-    .transports_image{
-        display: none;
-    }
     /* h1{
         font-size: var(--font-h1);
     }
@@ -74,9 +71,9 @@
         font-size: var(--font-h2);
     } */
     /* PRÉSENTATION */
-    .Presentation{
+    /* .Presentation{
         min-height: calc(50dvh - 74px);
-    }
+    } */
     .Presentation p {
         padding: 0 30px;
     }
@@ -120,18 +117,10 @@
         display: flex;
         flex-direction: column;
     }
-    .Moyens{
+    .Moyens_content{
         flex-direction: column;
     }
     .moyens_intro{
-        text-align: center;
-    }
-    /* TRANSPORTS */
-    .Transports {
-        display: flex;
-        flex-direction: column;
-    }
-    .transports_intro{
         text-align: center;
     }
     .references_grid{
@@ -173,7 +162,24 @@ MOBILES
 ========================================= */
 
 @media screen and (max-width: 768px) {
+    /* TRANSPORTS */
+    .Transports {
+        display: flex;
+        flex-direction: column;
+    }
+    .transports_intro{
+        text-align: center;
+    }
     
+    .presentation_image{
+        display: none;
+    }
+    .transports_image{
+        display: none;
+    }
+    .moyens_image{
+        display: none;
+    }
     .footerwrap{
         flex-direction: column;
         align-items: start;
@@ -198,9 +204,9 @@ MOBILES
     }
 
 
-    .Transports img {
+    /* .Transports img {
         width: 100%;
-    }
+    } */
 
     /* CONTACT */
     .Contact_wrap {
@@ -223,7 +229,7 @@ MOBILES
 
 
 /* =========================================
-   PETITS MOBILES
+PETITS MOBILES
 ========================================= */
 
 @media screen and (max-width: 480px) {

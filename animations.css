@@ -38,6 +38,12 @@ label.required::after{
     opacity: 1;
     transform: translateX(0);
 }
+.presentation_image:hover img {
+    transform: scale(1.04);
+}
+.moyens_image:hover img {
+    transform: scale(1.04);
+}
 .transports_image:hover img {
     transform: scale(1.04);
 }

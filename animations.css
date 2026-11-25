@@ -1,3 +1,14 @@
+/*Animation apparition du menu de navigation sur mobile*/
+@media screen and (max-width: 1024px) {
+    nav{
+        transform: translateY(-15px);
+        transition: opacity 0.3s ease,transform 0.3s ease;
+    }
+    nav.active{
+        transform: translateY(0);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+}
 nav a::after{
     content: "";
     position: absolute;
@@ -12,6 +23,11 @@ nav a::after{
 }
 nav a:hover::after{
     transform: scaleX(1);
+}
+label.required::after{
+    content: " *";
+    color: var(--red);
+    font-weight: bold;
 }
 .reveal {
     opacity: 0;

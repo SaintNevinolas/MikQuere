@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const champ_enlevement = document.getElementById('champ_enlevement');
     const destination = document.getElementById('destination');
     const enlevement = document.getElementById('enlevement');
+    const champ_company = document.getElementById('champ_company');
+    const company = document.getElementById('company');
     subject.addEventListener('change',function(){
         console.log(this.value)
         if(this.value!="candidature"){
@@ -63,8 +65,12 @@ document.addEventListener("DOMContentLoaded", () => {
             Array.from(champ_enlevement.children).forEach(element=>{
                 element.hidden = false;
             })
+            Array.from(champ_company.children).forEach(element=>{
+                element.hidden = false;
+            })
             enlevement.required = true;
             destination.required = true;
+            company.required = true;
         }else{
             Array.from(champ_destination.children).forEach(element=>{
                 element.hidden = true;
@@ -72,8 +78,12 @@ document.addEventListener("DOMContentLoaded", () => {
             Array.from(champ_enlevement.children).forEach(element=>{
                 element.hidden = true;
             })
+            Array.from(champ_company.children).forEach(element=>{
+                element.hidden = true;
+            })
             enlevement.required = false;
             destination.required = false;
+            company.required = false;
         }
     });
 
